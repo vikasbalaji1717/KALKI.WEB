@@ -1,0 +1,93 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #d8b0b0; /* Light background */
+    color: #333; /* Darker text for readability */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007bff; /* Blue heading */
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    background-color: rgb(157, 124, 124); /* White table background */
+    border-radius: 8px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners are applied */
+  }
+  
+  th, td {
+    border: 1px solid #e2caca;
+    padding: 12px 15px; /* Increased padding for better spacing */
+    text-align: left;
+  }
+  
+  th {
+    background-color: #e2caca;
+    font-weight: 600; /* Slightly bolder header text */
+    color: #555; /* Darker header text */
+  }
+  
+  tr:nth-child(even) {
+    background-color: #e2caca; /* Light gray for even rows */
+  }
+  
+  .quantity-input {
+    width: 60px; /* Slightly wider input */
+    text-align: center;
+    padding: 8px; /* Padding inside the input */
+    border: 1px solid #e2caca;
+    border-radius: 4px;
+    box-sizing: border-box; /* Ensures padding doesn't affect width */
+  }
+  
+  .quantity-input:focus {
+    outline: none;
+    border-color: #929ca7; /* Blue border on focus */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Blue shadow on focus */
+  }
+  
+  /* Responsive adjustments (optional) */
+  @media (max-width: 600px) {
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+  
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+  
+    tr {
+      border: 1px solid #130e0e;
+      margin-bottom: 10px;
+    }
+  
+    td {
+      border: none;
+      border-bottom: 1px solid #654141;
+      position: relative;
+      padding-left: 50%;
+      text-align: left;
+    }
+  
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+      content: attr(data-label);
+      font-weight: bold;
+    }
+  
+    td:nth-of-type(1):before { content: "Item"; }
+    td:nth-of-type(2):before { content: "Price"; }
+    td:nth-of-type(3):before { content: "Quantity"; }
+  }

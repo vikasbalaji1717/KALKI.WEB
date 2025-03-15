@@ -1,0 +1,10 @@
+
+
+div{
+    display: inline-block;
+    align-items: center;
+    padding: 180px;
+    text-align: center;
+    filter: drop-shadow(10px 10px 10px black);
+    background-image: url(2019.avif);
+}

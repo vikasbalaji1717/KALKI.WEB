@@ -1,0 +1,22 @@
+body{
+    background-color: rgb(136, 134, 133);
+    color: rgb(5, 5, 5);
+}
+
+#box{
+     background-attachment: blue;
+    }
+    body{
+        background-image: url(u5H3QCL9kiE98swiPPKLiX-1200-80.jpg);
+       background-repeat: repeat-x;
+        background-position: 100px;
+        background-attachment: local;
+        background-color: aqua;
+    }
+    body{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: inherit;
+        font-weight: 200;
+        font-size: medium;
+    }
+    
